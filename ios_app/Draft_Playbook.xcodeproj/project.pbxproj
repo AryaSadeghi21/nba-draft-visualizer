@@ -27,14 +27,11 @@
 		666346F82E813ED8009CA221 /* Draft_Playbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draft_Playbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		666347082E813EDB009CA221 /* Draft_PlaybookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draft_PlaybookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		666347122E813EDB009CA221 /* Draft_PlaybookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draft_PlaybookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66650A102E834A2700146464 /* Draft_Playbook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Draft_Playbook-Bridging-Header.h"; sourceTree = "<group>"; };
+		66650A2B2E8367C100146464 /* Draft-Playbook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Draft-Playbook-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		666346FA2E813ED8009CA221 /* Draft_Playbook */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Draft_Playbook;
-			sourceTree = "<group>";
-		};
 		6663470B2E813EDB009CA221 /* Draft_PlaybookTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Draft_PlaybookTests;
@@ -43,6 +40,11 @@
 		666347152E813EDB009CA221 /* Draft_PlaybookUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Draft_PlaybookUITests;
+			sourceTree = "<group>";
+		};
+		66650A112E834A4800146464 /* Screens */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +77,12 @@
 		666346EF2E813ED8009CA221 = {
 			isa = PBXGroup;
 			children = (
-				666346FA2E813ED8009CA221 /* Draft_Playbook */,
+				66650A2B2E8367C100146464 /* Draft-Playbook-Info.plist */,
 				6663470B2E813EDB009CA221 /* Draft_PlaybookTests */,
 				666347152E813EDB009CA221 /* Draft_PlaybookUITests */,
 				666346F92E813ED8009CA221 /* Products */,
+				66650A112E834A4800146464 /* Screens */,
+				66650A102E834A2700146464 /* Draft_Playbook-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +112,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				666346FA2E813ED8009CA221 /* Draft_Playbook */,
+				66650A112E834A4800146464 /* Screens */,
 			);
 			name = Draft_Playbook;
 			packageProductDependencies = (
@@ -175,6 +179,7 @@
 				TargetAttributes = {
 					666346F72E813ED8009CA221 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 					666347072E813EDB009CA221 = {
 						CreatedOnToolsVersion = 16.2;
@@ -393,11 +398,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Draft_Playbook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = LLK4JMP3B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Draft-Playbook-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -411,6 +419,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ARYASAD.Draft-Playbook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Draft_Playbook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,11 +431,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Draft_Playbook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = LLK4JMP3B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Draft-Playbook-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,6 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ARYASAD.Draft-Playbook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Draft_Playbook-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
