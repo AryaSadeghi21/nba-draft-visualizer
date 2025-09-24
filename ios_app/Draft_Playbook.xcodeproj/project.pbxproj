@@ -47,6 +47,16 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		66650A3F2E83B2DB00146464 /* Scripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		66650A462E83C0B800146464 /* datasets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = datasets;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,8 @@
 				666346F92E813ED8009CA221 /* Products */,
 				66650A112E834A4800146464 /* Screens */,
 				66650A102E834A2700146464 /* Draft_Playbook-Bridging-Header.h */,
+				66650A3F2E83B2DB00146464 /* Scripts */,
+				66650A462E83C0B800146464 /* datasets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +125,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				66650A112E834A4800146464 /* Screens */,
+				66650A3F2E83B2DB00146464 /* Scripts */,
+				66650A462E83C0B800146464 /* datasets */,
 			);
 			name = Draft_Playbook;
 			packageProductDependencies = (

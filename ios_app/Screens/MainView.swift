@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var settings = DraftSettings()
     @State private var activeTab: Tab = .home
     
     var body: some View {
@@ -8,9 +9,9 @@ struct MainView: View {
             ZStack {
                 switch activeTab {
                 case .home:
-                    ContentView(activeTab: $activeTab)
+                    ContentView(activeTab: $activeTab).environmentObject(settings)
                 case .draft:
-                    DraftSettingsView(activeTab: $activeTab) 
+                    DraftSettingsView(activeTab: $activeTab).environmentObject(settings)
                 }
             }
             

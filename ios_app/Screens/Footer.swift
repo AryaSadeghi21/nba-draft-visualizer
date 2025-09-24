@@ -13,7 +13,7 @@ struct Footer: View {
                 activeTab = .home
             }
             FooterItem(
-                icon: "doc",
+                icon: "person.3",
                 label: "Draft",
                 active: activeTab == .draft
             ) {
